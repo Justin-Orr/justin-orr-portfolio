@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import "@/styles/Homepage.css";
 
 export default function HomePage() {
   return (
@@ -14,7 +15,7 @@ export default function HomePage() {
       />
 
       {/* Content */}
-      <section className="relative z-10">
+      <section id="homeHeaderContainer" className="z-10">
         <Navbar />
         <section>
           <h1>Justin Orr</h1>

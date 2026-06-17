@@ -1,24 +1,22 @@
-import Link from "next/link";
+import Logo from "@/components/Logo";
 import NavbarButton from "@/components/NavbarButton";
+import "@/styles/Navbar.css";
 
-const navContainerStyling = " mx-auto flex max-w-7xl items-center justify-between px-6 py-8";
-const logoLinkStyling = " text-xl font-semibold tracking-wide text-white";
-const navLinkStyling = "hidden md:flex gap-10";
+//const navContainerStyling = "mx-auto flex max-w-7xl items-center justify-between px-6 py-8";
+//const logoLinkStyling = "text-xl font-semibold tracking-wide text-white";
+//const navLinkStyling = "hidden md:flex gap-10";
 
 export default function Navbar() {
     return(
-        <nav className={navContainerStyling}>
-            <Link href="/" className={logoLinkStyling}>
-                JO
-            </Link>
-            <div className={navLinkStyling}>
-                <NavbarButton linkName="Home" urlPath="/"/>
-                <NavbarButton linkName="Skills" urlPath="/skills"/>
-                <NavbarButton linkName="Experience" urlPath="/experience"/>
-                <NavbarButton linkName="Services" urlPath="/services"/>
-                <NavbarButton linkName="Projects" urlPath="/projects"/>
-                <NavbarButton linkName="About" urlPath="/about"/>
-                <NavbarButton linkName="Contact" urlPath="/contact"/>
+        <nav id="navContainer">
+            <Logo />
+            <div>
+                <NavbarButton linkName="SKILLS" urlPath="/skills"/>
+                <NavbarButton linkName="EXPERIENCE" urlPath="/experience"/>
+                <NavbarButton linkName="SERVICES" urlPath="/services"/>
+                <NavbarButton linkName="PROJECTS" urlPath="/projects"/>
+                <NavbarButton linkName="ABOUT" urlPath="/about"/>
+                <NavbarButton linkName="CONTACT" urlPath="/contact"/>
             </div>
         </nav>
     );

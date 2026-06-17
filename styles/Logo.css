@@ -1,0 +1,25 @@
+.underline-effect {
+  position: relative; 
+}
+
+.underline-effect::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: -2px;
+  background: linear-gradient(
+    to right,
+    #936ffa,
+    #28dde5
+  );
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 300ms;
+}
+
+.underline-effect:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
