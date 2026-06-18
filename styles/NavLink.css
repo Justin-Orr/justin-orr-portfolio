@@ -1,0 +1,13 @@
+.navlink:hover {
+  transition: transform 300ms ease-in-out;
+  background-image: linear-gradient(
+    to right,
+    #936ffa,
+    #28dde5
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}

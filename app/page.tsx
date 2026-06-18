@@ -1,21 +1,25 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
-import "@/styles/Homepage.css";
 
 export default function HomePage() {
   return (
-    <header className="relative min-h-screen">
-      {/* Background */}
-      <Image
-        src="/images/home-page-hero-background.png"
-        alt="Minimalist dark mountain background image."
-        fill
-        priority
-        className="object-cover"
-      />
+    <header className="relative min-h-screen overflow-hidden">
+  
+      <div className="absolute inset-0 -z-10">
+        {/* Background */}
+        <Image
+          src="/images/GoldLeafBackground.jpg"
+          alt="Minimalist dark mountain background image."
+          fill
+          priority
+          className="object-cover"
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
 
       {/* Content */}
-      <section id="homeHeaderContainer" className="z-10">
+      <section className="relative flex flex-col z-10">
         <Navbar />
         <section>
           <h1>Justin Orr</h1>

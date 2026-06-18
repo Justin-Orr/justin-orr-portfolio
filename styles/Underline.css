@@ -1,25 +1,30 @@
 .underline-effect {
-  position: relative; 
+  position: relative;
 }
 
 .underline-effect::after {
   content: '';
   position: absolute;
   width: 100%;
-  height: 3px;
+  height: 1px;
   left: 0;
   bottom: -2px;
-  background: linear-gradient(
-    to right,
-    #936ffa,
-    #28dde5
-  );
+  background: #ffffff;
   transform: scaleX(0);
   transform-origin: bottom right;
-  transition: transform 300ms;
+  transition: transform 200ms;
 }
 
 .underline-effect:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+#logoSubstring.underline-effect::after {
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    #936ffa,
+    #28dde5
+  );
 }
