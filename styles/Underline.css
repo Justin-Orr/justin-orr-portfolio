@@ -24,7 +24,7 @@
   height: 3px;
   background: linear-gradient(
     to right,
-    #936ffa,
-    #28dde5
+    var(--accent-purple),
+    var(--accent-cyan)
   );
 }

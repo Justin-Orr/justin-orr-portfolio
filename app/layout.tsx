@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Footer from "@/components/Footer"; 
 import "./globals.css";
 import { poppins } from '@/app/ui/fonts';
+import { space_grotesk } from "@/app/ui/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
