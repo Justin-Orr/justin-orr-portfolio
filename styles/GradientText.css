@@ -1,0 +1,17 @@
+.gradientText {
+    font-weight: 600;
+
+  /* gradient background */
+  background-image: linear-gradient(
+    to right,
+    var(--accent-purple),
+    var(--accent-cyan)
+  );
+
+  /* make text reveal background */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* hide actual text fill */
+  color: transparent;
+}
